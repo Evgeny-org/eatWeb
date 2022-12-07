@@ -1,0 +1,31 @@
+/*
+	colorsScheme: 
+		green: #5fb709
+		footerBg: #262626
+		greyBg: f4f5f7
+		lineColor: #d9dadb
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	font-family: KSB; 
+	src: url(fonts/KayakSansBold.otf); 
+}
+@font-face{
+	font-family: KSL; 
+	src: url(fonts/KayakSansLight.otf); 
+}
+@font-face{
+	font-family: KSR; 
+	src: url(fonts/KayakSansRegular.otf); 
+}
+
+.container{
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
