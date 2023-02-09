@@ -28,4 +28,530 @@
 	max-width: 1600px;
 	margin: 0 auto;
 }
+.bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-color: #f4f5f7;
+	clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+	width: 100%;
+	height: 1050px;
+}
+p.title{
+	font-family: KSB;
+	font-size: 48px;
+	color: #000;
+	line-height: 1.5;
+}
+p.text{
+	font-family: KSR;
+	font-size: 24px;
+	color: #000;
+}
+button{
+	background-color: #5fb709;
+	padding: 15px 30px;
+	border: 0;
+	border-radius: 10px;
+	white-space: nowrap;
+}
+button p{
+	font-family: KSR;
+	font-size: 24px;
+	color: #fff;
+}
+span{
+	color: #5fb709;
+}
+form input{
+	border: 1px solid grey;
+	border-radius: 10px;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+form input::placeholder{
+	font-family: KSR;
+	font-size: 16px;
+}
+
+header button{
+	position: absolute;
+	top: 5%;
+	right: 10%;
+	z-index: 1;
+	zoom: .8;
+}
+
+main .auth{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	transition: 0s;
+	z-index: -1;
+}
+main .auth .box{
+	position: absolute;
+	top: -25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25%;
+	background-color: #fff;
+	padding: 50px;
+	border-radius: 10px;
+	animation-duration: .5s;
+}
+main .auth .box .close{
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	width: 25px;
+}
+main .auth .box .close div{
+	width: 100%;
+	height: 2px;
+	border-radius: 10px;
+	background-color: #000;
+}
+main .auth .box .close .one{
+	transform: translateY(2px) rotate(45deg);
+}
+main .auth .box .close .two{
+	transform: rotate(-45deg);
+}
+@keyframes authIn{
+	0%{
+		top: 0;
+	}
+	50%{
+		top: 60%;
+	}
+	100%{
+		top: 50%;
+	}
+}
+@keyframes authOut{
+	0%{
+		top: 50%;
+	}
+	50%{
+		top: 60%;
+	}
+	100%{
+		top: -25%;
+	}
+}
+main .auth .up{
+	display: flex;
+}
+main .auth input{
+	font-family: KSR;
+	width: 100%;
+	height: 50px;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+main .auth input:nth-child(1){
+	margin-right: 10px;
+}
+main .auth input::placeholder{
+	font-size: 24px;
+}
+main .auth button{
+	width: 100%;
+}
+
+main .loveOfFood{
+	margin-bottom: 500px;
+}
+main .loveOfFood img{
+	position: absolute;
+}
+main .loveOfFood img:nth-child(1){
+	top: 0;
+	right: 0;
+}
+main .loveOfFood .onion{
+	position: absolute;
+	top: 40%;
+	left: 35%;
+}
+main .loveOfFood .onion img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+main .loveOfFood .onion img:nth-child(1){
+	top: 50px;
+	z-index: 1;
+}
+main .loveOfFood .onion img:nth-child(2){
+	left: 100px;
+}
+main .loveOfFood .container{
+	margin-top: 10%;
+}
+main .loveOfFood p.title{
+	width: 25%;
+	margin-bottom: 50px;
+}
+main .loveOfFood p.text{
+	margin-bottom: 50px;
+}
+main .loveOfFood .bg{
+	top: -20%;
+}
+
+main .deliverNearYou{
+	position: relative;
+	margin-bottom: 600px;
+}
+main .deliverNearYou img{
+	position: absolute;
+}
+main .deliverNearYou img:nth-child(1){
+	top: -200px;
+	right: 15%;
+}
+main .deliverNearYou img:nth-child(2){
+	top: -100px;
+	left: 15%;
+}
+main .deliverNearYou .box{
+	width: 40%;
+	padding-right: 10%;
+	margin-left: auto;
+}
+main .deliverNearYou .box .title{
+	margin-bottom: 50px;
+}
+main .deliverNearYou .box form{
+	display: flex;
+}
+main .deliverNearYou .box form input{
+	width: 100%;
+	margin-right: 5px;
+	font-size: 18px;
+}
+main .deliverNearYou .box form input::placeholder{
+	font-family: KSR;
+	font-size: 18px;
+}
+
+main .favourites{
+	position: relative;
+	margin-bottom: 600px;
+}
+main .favourites img{
+	position: absolute;
+}
+main .favourites img:nth-child(1){
+	top: -100px;
+	left: 300px;
+}
+main .favourites img:nth-child(2){
+	top: -75px;
+	left: 300px;
+}
+main .favourites img:nth-child(3){
+	top: 0;
+	left: -125px;
+}
+main .favourites img:nth-child(4){
+	top: -250px;
+	right: 30%;
+	zoom: .8;
+}
+main .favourites img:nth-child(5){
+	top: -300px;
+	right: 100px;
+	zoom: 0.9;
+}
+main .favourites .bg{
+	top: -400px;
+}
+main .favourites .box{
+	width: 40%;
+}
+main .favourites .box .title{
+	margin-bottom: 50px;
+}
+
+main .uberAccount{
+	position: relative;
+	margin-bottom: 700px;
+}
+main .uberAccount img{
+	position: absolute;
+}
+main .uberAccount img:nth-child(1){
+	top: -225px;
+	left: 0;
+}
+main .uberAccount img:nth-child(2){
+	top: -250px;
+	right: 25%;
+	filter: drop-shadow(20px 20px 30px grey);
+}
+main .uberAccount img:nth-child(3){
+	top: 400px;
+	right: 40%;
+}
+main .uberAccount img:nth-child(4){
+	top: 375px;
+	right: 40%;
+}
+main .uberAccount img:nth-child(5){
+	top: 0;
+	right: 0;
+}
+main .uberAccount .box{
+	width: 600px;
+	margin-left: auto;
+	margin-right: 200px;
+}
+
+main .restaurantToYou{
+	position: relative;
+	margin-bottom: 700px;
+}
+main .restaurantToYou img{
+	position: absolute;
+	z-index: 1;
+}
+main .restaurantToYou img:nth-child(1){
+	zoom: .8;
+	top: -300px;
+	right: 20%;
+}
+main .restaurantToYou img:nth-child(2){
+	width: 100%;
+	top: -200px;
+	z-index: 0;
+}
+main .restaurantToYou img:nth-child(3){
+	top: -200px;
+	right: 45%;
+}
+main .restaurantToYou img:nth-child(4){
+	top: 250px;
+	left: 15%;
+}
+main .restaurantToYou img:nth-child(5){
+	top: 300px;
+	left: 27%;
+}
+main .restaurantToYou img:nth-child(6){
+	top: 175px;
+	left: 15%;
+}
+main .restaurantToYou img:nth-child(7){
+	top: 215px;
+	left: 50%;
+}
+main .restaurantToYou img:nth-child(8){
+	top: -150px;
+	right: 10%;
+}
+main .restaurantToYou .bg{
+	top: -400px;
+}
+main .restaurantToYou .box{
+	width: 600px;
+}
+
+main .withATap{
+	position: relative;
+	margin-bottom: 700px;
+}
+main .withATap img{
+	position: absolute;
+}
+main .withATap .box img{
+	position: static;
+}
+main .withATap img:nth-child(1){
+	top: -100px;
+	left: 5%;
+	z-index: 0;
+}
+main .withATap img:nth-child(2){
+	top: -100px;
+	left: 45%;
+}
+main .withATap img:nth-child(3){
+	top: -125px;
+	left: 45%;
+}
+main .withATap img:nth-child(4){
+	top: -300px;
+	right: 5%;
+}
+main .withATap img:nth-child(5){
+	top: 450px;
+	right: 20%;
+}
+main .withATap img:nth-child(6){
+	top: 400px;
+	right: 0;
+}
+main .withATap .box{
+	width: 600px;
+	margin-left: auto;
+	margin-right: 250px;
+}
+main .withATap .box .up img{
+	width: 150px;
+	height: 150px;
+	margin-right: 50px;
+}
+main .withATap .box .up{
+	display: flex;
+	margin-bottom: 50px;
+}
+main .withATap .box .down{
+	display: flex;
+}
+main .withATap .box .down img:nth-child(1){
+	margin-right: 25px;
+}
+
+main .getStarted{
+	position: relative;
+}
+main .getStarted .bg{
+	top: -300px;
+}
+main .getStarted .box{
+	display: flex;
+	justify-content: center;
+}
+main .getStarted .box img{
+	margin-bottom: 50px;
+}
+main .getStarted .box p.title{
+	margin-bottom: 50px;
+}
+main .getStarted .box p.text{
+	margin-bottom: 50px;
+	width: 450px;
+}
+main .getStarted .box .left{
+	margin-right: 100px;
+}
+main .getStarted .box .right{
+	margin-left: 100px;
+}
+main{
+	margin-bottom: 100px;
+}
+
+footer{
+	background-color: #000;
+	padding: 100px 0 25px 0;
+}
+footer hr{
+	width: 100%;
+}
+footer .container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+footer .left .language{
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid grey;
+	margin-bottom: 25px;
+	padding-bottom: 5px;
+}
+footer .left .language img:nth-child(1){
+	margin-right: 20px;
+}
+footer .left .language p{
+	color: #fff;
+	font-family: KSL;
+	font-size: 20px;
+	margin-right: 50px;
+}
+footer .left .icons{
+	display: flex;
+}
+footer .left .icons img{
+	height: 30px;
+	margin-right: 20px;
+}
+footer .left{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+footer .left .down p{
+	color: #aaa;
+	white-space: nowrap;
+}
+footer .middle{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 15%;
+}
+footer .middle .column{
+	display: flex;
+	flex-direction: column;
+}
+footer .middle a{
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: KSL;
+	margin-bottom: 25px;
+}
+footer .middle a:hover{
+	text-decoration: underline;
+}
+footer .right p{
+	font-family: KSL;
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+footer .right .down{
+	display: flex;
+}
+footer .right img{
+	zoom: .75;
+}
+footer .right img:nth-child(1){
+	margin-right: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
