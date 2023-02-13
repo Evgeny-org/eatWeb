@@ -59,8 +59,8 @@
 			<div class="container">
 				<div class="box">
 					<p class="title">Discover  restaurants that <span>deliver near you.</span></p>
-					<form action="">
-						<input type="text" placeholder="Enter your delivery address">
+					<form action="fruits.php" method="POST">
+						<input type="text" name="name" placeholder="Enter your delivery address">
 						<button><p>Find Food</p></button>
 					</form>
 				</div>
